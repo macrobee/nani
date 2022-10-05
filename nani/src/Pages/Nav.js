@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 
 class Nav extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
     }
     render(){
+        const {onClick} = this.props;
+
         return(
             <div id="nav-bar">
-                <div className="nav-item">Home</div>
-                <div className="nav-item">About</div>
-                <div className="nav-item">Cottage</div>
-                <div className="nav-item">Meet the Kids</div>
-                <div className="nav-item">Stretch Club</div>
+                <div className="nav-item" id="home" onClick={onClick}>Home</div>
+                <div className="nav-item" id="about" onClick={onClick}>About</div>
+                <div className="nav-item" id="cottage" onClick={onClick}>Cottage</div>
+                <div className="nav-item" id="meet" onClick={onClick}>Meet the Kids</div>
+                <div className="nav-item" id="stretch" onClick={onClick}>Stretch Club</div>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import hangout from '../Images/hangout.jpg';
+import photo from '../Images/fire.jpg';
 
 class About extends Component{
     constructor(){
@@ -7,9 +7,9 @@ class About extends Component{
     }
     render(){
         return(
-            <div id="about">
+            <div id="about-page" className="pages">
                 <h2>Hello this is the about page</h2>
-                <img src={hangout} width="500px" alt="nani kids hanging out"/>
+                <img src={photo} width="500px" alt="nani kids hanging out"/>
                 
             </div>
         )
